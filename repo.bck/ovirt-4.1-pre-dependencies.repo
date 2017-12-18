@@ -1,0 +1,76 @@
+# imgbased: set-enabled
+# imgbased: set-enabled
+[ovirt-4.1-epel]
+enabled=1
+name=Extra Packages for Enterprise Linux 7 - $basearch
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+baseurl=http://10.100.211.44/test/Packages/
+#baseurl=http://download.fedoraproject.org/pub/epel/7/$basearch
+failovermethod=priority
+includepkgs=epel-release,python-uinput,puppet,python-lockfile,python-cpopen,python-ordereddict,python-pthreading,python-inotify,python-argparse,novnc,python-ply,python-kitchen,python-daemon,python-websockify,livecd-tools,spice-html5,mom,python-IPy,python-ioprocess,ioprocess,safelease,python-paramiko,python2-paramiko,python2-crypto,libtomcrypt,libtommath,python-cheetah,python-ecdsa,python2-ecdsa,python-markdown,rubygem-rgen,ovirt-guest-agent*,userspace-rcu,protobuf-java,objenesis,python34*,hystrix-core,archaius-core,rxjava,jctools,hystrix-metrics-event-stream,jackson-core,python-simplejson
+gpgcheck=0
+gpgkey=https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
+
+[ovirt-4.1-centos-gluster38]
+enabled=1
+name=CentOS-7 - Gluster 3.8
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+baseurl=http://10.100.211.44/test/Packages/
+#baseurl=http://mirror.centos.org/centos/7/storage/$basearch/gluster-3.8/
+gpgcheck=0
+gpgkey=https://raw.githubusercontent.com/CentOS-Storage-SIG/centos-release-storage-common/master/RPM-GPG-KEY-CentOS-SIG-Storage
+
+[ovirt-4.1-patternfly1-noarch-epel]
+enabled=1
+name=Copr repo for patternfly1 owned by patternfly
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+baseurl=http://10.100.211.44/test/Packages/
+#baseurl=http://copr-be.cloud.fedoraproject.org/results/patternfly/patternfly1/epel-7-$basearch/
+skip_if_unavailable=1
+gpgcheck=0
+
+[virtio-win-stable]
+enabled=1
+name=virtio-win builds roughly matching what was shipped in latest RHEL
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+baseurl=http://10.100.211.44/test/Packages/
+#baseurl=http://fedorapeople.org/groups/virt/virtio-win/repo/stable
+skip_if_unavailable=1
+gpgcheck=0
+
+[ovirt-centos-ovirt41]
+enabled=1
+name=CentOS-$releasever - oVirt 4.1
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+baseurl=http://10.100.211.44/test/Packages/
+#baseurl=http://mirror.centos.org/centos/$releasever/virt/$basearch/ovirt-4.1/
+gpgcheck=0
+
+[centos-opstools-release]
+enabled=1
+name=CentOS-7 - OpsTools - release
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+baseurl=http://10.100.211.44/test/Packages/
+#baseurl=http://mirror.centos.org/centos/$releasever/opstools/$basearch/
+gpgcheck=0
+skip_if_unavailable=1
+
+[sac-gdeploy]
+enabled=1
+name=Copr repo for gdeploy owned by sac
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+baseurl=http://10.100.211.44/test/Packages/
+#baseurl=https://copr-be.cloud.fedoraproject.org/results/sac/gdeploy/epel-7-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=0
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/sac/gdeploy/pubkey.gpg
+repo_gpgcheck=0
+enabled_metadata=1

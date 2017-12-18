@@ -1,0 +1,24 @@
+# imgbased: set-enabled
+# imgbased: set-enabled
+[ovirt-4.1-pre]
+enabled=1
+name=oVirt 4.1 Pre-Release
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+baseurl=http://10.100.211.44/test/Packages/
+#baseurl=http://resources.ovirt.org/pub/ovirt-4.1-pre/rpm/el$releasever/
+#mirrorlist=http://resources.ovirt.org/pub/yum-repo/mirrorlist-ovirt-4.1-pre-el$releasever
+skip_if_unavailable=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-ovirt-4.1
+
+[ovirt-4.1]
+enabled=1
+name=Latest oVirt 4.1 Release
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+includepkgs=ovirt-node-ng-image-update ovirt-node-ng-image ovirt-engine-appliance
+baseurl=http://10.100.211.44/test/Packages/
+#baseurl=http://resources.ovirt.org/pub/ovirt-4.1/rpm/el$releasever/
+skip_if_unavailable=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-ovirt-4.1

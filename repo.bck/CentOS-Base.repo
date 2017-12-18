@@ -1,0 +1,7 @@
+[base]
+enabled=0
+name=loaclyum
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
+baseurl=http://10.100.211.44/test/Packages/
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
